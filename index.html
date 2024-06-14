@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="screen">
+        <h1>Aim Trainer</h1>
+        <button class="btn" id="start">Start Game</button>
+    </div>
+
+    <div class="screen">
+        <h1>Choose Time</h1>
+        <ul class="list" id="time-list">
+            <li>
+                <bytton class="btn btn-time" data-time="10">10 sec</bytton>
+            </li>
+            <li>
+                <bytton class="btn btn-time" data-time="30">30 sec</bytton>
+            </li>
+            <li>
+                <bytton class="btn btn-time" data-time="60">60 sec</bytton>
+            </li>
+            <li>
+                <bytton class="btn btn-time" data-time="120">120 sec</bytton>
+            </li>
+            <li>
+                <bytton class="btn btn-time" data-unlimited=true>Unlimited</bytton>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <div class="screen">
+        <h1>Choose Difficulty</h1>
+        <ul class="list" id="time-list">
+            <li>
+                <bytton class="btn difficulty-btn" data-time="0">easy</bytton>
+            </li>
+            <li>
+                <bytton class="btn difficulty-btn" data-time="1">medium</bytton>
+            </li>
+            <li>
+                <bytton class="btn difficulty-btn" data-time="2">hard</bytton>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="screen ">
+        <div class="stats">
+            <div class="info">
+                <p>Time: <span id="time">00:00</span></p>
+                <p>Hits: <span id="hits">0</span></p>
+                <p>Accuracy: <span id="accuracy">100%</span></p>
+            </div>
+            <div class="lives">
+                <img class="hearth dead" src='Video-Game-Icon-Heart-580x385-removebg-preview.png' alt="" class="heart">
+                <img class="hearth" src='Video-Game-Icon-Heart-580x385-removebg-preview.png' alt="" class="heart">
+
+                <img class="hearth" src='Video-Game-Icon-Heart-580x385-removebg-preview.png' alt="" class="heart">
+
+            </div>
+        </div>
+        <div class="board" id="board">
+            <div class="circle"></div>
+        </div>
+        <div class="options">
+            <button class="btn restart">Restart</button>
+            <button class="btn restart" id="fullscreen">Full Screen</button>
+            <button class="btn restart" id="minimize">Minimize</button>
+        </div>
+    </div>
+
+    <div class="screen">
+        <h1>Game Over</h1>
+        <div class="results">
+            <p>Hits : <span id="hit-over">0</span></p>
+            <p>Hits : <span id="accuracy-over">0%</span></p>
+        </div>
+        <button class="btn restart">Restart</button>
+    </div>
+
+</body>
+
+</html>
